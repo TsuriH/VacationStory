@@ -1,0 +1,22 @@
+.Layout {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.2fr 3fr 0.2fr;
+}
+
+.Layout header {
+    border-bottom: 1px solid grey;
+    
+}
+
+.Layout header p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Layout main {
+    height: 100%;
+}
+

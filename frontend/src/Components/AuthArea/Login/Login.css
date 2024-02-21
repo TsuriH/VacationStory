@@ -1,0 +1,142 @@
+.Login {
+
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+.Login .login-container {
+
+    border: white 1px solid;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+
+}
+
+.Login .bg {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.Login .login-box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+
+}
+
+.Login .login-box h2 {
+
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 0.5em;
+}
+
+.Login .user-name-input-container-user,
+.Login .user-name-input-container-lock {
+
+    border-radius: 25px;
+    padding: 12px 15px;
+    width: 100%;
+  
+
+}
+
+.Login .login-box button {
+
+    border-radius: 25px;
+    padding: 12px 15px;
+    width: 100%;
+
+}
+
+.Login .user-name-input-container-lock,
+.Login .user-name-input-container-user {
+
+    background: transparent;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.Login .user-name-input-container-lock input,
+.Login .user-name-input-container-user input {
+
+    background: transparent;
+    border-style: none;
+    outline: none;
+
+}
+
+.Login .login-box button {
+
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-style: none;
+}
+
+.Login .user-name::placeholder,
+.Login .password::placeholder {
+
+    color: white;
+    text-transform: capitalize;
+    opacity: 0.7;
+    font-size: 0.85em;
+
+}
+
+.Login .user-name-input-container-lock input:focus::placeholder,
+.Login .user-name-input-container-user input:focus::placeholder {
+
+    color: transparent;
+
+}
+
+.Login .login-box p {
+
+    color: white;
+    font-size: 0.5em;
+}
+
+.Login .login-box p span {
+
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.Login .user-name-input-container-user,
+.Login .user-name-input-container-lock {
+
+    position: relative;
+
+}
+
+.Login .fa-user,
+.Login .fa-lock {
+
+    color: white;
+    font-size: 0.85em;
+
+}
+
+.Login .login:hover {
+cursor: pointer;
+}

@@ -1,0 +1,83 @@
+.Main {
+    height: 100%;
+    padding: 3em;
+}
+
+.Main .menu {
+    position: relative;
+}
+
+.Main .vacations-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Main .add-vacation {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 3em;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    /* background: blue; */
+    border-radius: 0.3em;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    background:rgb(25, 109, 25);;
+}
+
+.Main .menu-btn-container {
+    position: absolute;
+    left: 0;
+    background-color: none;
+    padding-left: 3em;
+    display: flex;
+    gap: 1em;
+
+}
+
+.Main .menu-btn-container button {
+
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    background: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.Main .menu-btn-container .all-vac {
+    background: white;
+    color: rgb(35, 61, 35);
+    border: 2px solid black;
+}
+
+.Main .menu-btn-container .my-vac {
+    color: white;
+    background: rgb(35, 61, 35)
+}
+
+
+
+.Main .vacations-area .our-vacations {
+    text-align: center;
+    padding-bottom: 1.5em;
+    font-size: 2.5em;
+    font-weight: bold;
+
+}
+
+.Main .vacations-container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(4, 320px);
+    grid-template-rows: repeat();
+    grid-gap: 73px;
+}
