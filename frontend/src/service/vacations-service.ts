@@ -95,10 +95,29 @@ async function sendCredentials(credentials: CredentialsModel): Promise<void> {
 
 }
 
-async function deleteVacation(id: number): Promise<void> {  
-        const result = await axios.delete(`http://localhost:4004/api/vacations/${id}`)
-        //problem why don't I need here try and catch
+async function deleteVacation(id: number): Promise<void> {
+    const result = await axios.delete(`http://localhost:4004/api/vacations/${id}`)
+    //problem why don't I need here try and catch
 }
+
+async function addVacation(vacation: VacationModel): Promise<VacationModel> {
+    const formData = new FormData()
+
+    formData.append("country", vacation.country)
+    formData.append("description", vacation.description)
+    formData.append("price", vacation.price.toString())
+    formData.append("dates", vacation.dates)
+    formData.append("image", vacation.image[0])
+
+
+    const result = await axios.post(`http://localhost:4004/api/vacations/` + formData)
+
+    return result.data
+
+
+
+}
+
 
 
 
@@ -115,7 +134,8 @@ const vacationService =
     getAllVacationFollowers,
     sendCredentials,
     loggedInCheck,
-    deleteVacation
+    deleteVacation,
+    addVacation
 }
 
 export default vacationService

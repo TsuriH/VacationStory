@@ -39,9 +39,10 @@ function Main(): JSX.Element {
     }
 
 
-    const handleSubmit = (e: any) => {
+    const  handleSubmit = async(e: any) => {
         e.preventDefault();
-        console.log(formState)
+        const newVacation = formState
+        await vacationService.addVacation(newVacation)
   
     };
 
