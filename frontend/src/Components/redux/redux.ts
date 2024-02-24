@@ -11,7 +11,6 @@ export class AuthState {
         if (this.token) {
             const container: { user: UserModel } = jwtDecode(this.token)
             this.user = container.user
-            console.log(this.user)
 
         }
     }
@@ -49,7 +48,6 @@ export function authReducer(currentState = new AuthState(), action: AuthAction):
             newState.token = null;
             newState.user = null;
             localStorage.removeItem("token");
-            console.log(newState.user)
             break;
 
     }

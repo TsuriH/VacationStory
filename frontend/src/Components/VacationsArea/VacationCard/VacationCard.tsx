@@ -99,9 +99,11 @@ function VacationCard(props: vacationProps): JSX.Element {
                     {props.user.roleName === RoleModel.User &&
                         <div className="heart-like" onClick={() => heartToggle()}>
                             {/* problem, why when I switch between the below fontawesome icons the heart is out the center */}
+
                             {heartPressed ? <FontAwesomeIcon className="full-heart" icon={faHeart} size={"2x"} color="rgb(128, 38, 33)" /> : ""}
                             <FontAwesomeIcon icon={faHeartRegular} size={"2x"} color="white" />
                             <FontAwesomeIcon className="full-heart-hover" icon={faHeart} size={"2x"} color="rgb(128, 38, 33)" />
+                            
                         </div>
                     }
                 </div>

@@ -13,7 +13,6 @@ function Layout(): JSX.Element {
 
     const [user, setUser] = useState<UserModel | null>(authStore.getState().user || null)
     
-    console.log(user)
     useEffect(() => {
 
 
